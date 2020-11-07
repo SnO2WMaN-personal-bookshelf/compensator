@@ -2,7 +2,7 @@ import {createCanvas, registerFont} from 'canvas';
 import fastify from 'fastify';
 import constants from './constants';
 
-const server = fastify({logger: true});
+const server = fastify();
 
 export async function createImageBinary(title: string) {
   const canvas = createCanvas(constants.width, constants.height);
