@@ -1,0 +1,35 @@
+{
+  "name": "image-gen",
+  "private": true,
+  "author": "SnO2WMaN <sno2wman.official@gmail.com>",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "clean": "rimraf dist",
+    "lint": "run-s -cn lint:*",
+    "lint:eslint": "eslint . --ext .js,.ts",
+    "lint:prettier": "prettier --check **/*.{json,yml,yaml,md}",
+    "fmt": "run-s -cn fmt:*",
+    "fmt:eslint": "yarn lint:eslint --fix",
+    "fmt:prettier": "yarn lint:prettier --write"
+  },
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "fastify": "^3.7.0"
+  },
+  "devDependencies": {
+    "@arkweid/lefthook": "^0.7.2",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@shopify/eslint-plugin": "^39.0.0",
+    "@shopify/prettier-config": "^1.1.1",
+    "@types/node": "^14.11.2",
+    "eslint": "7.13.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "prettier-plugin-optipack": "^1.1.2",
+    "prettier-plugin-organize-imports": "^1.1.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.5"
+  }
+}

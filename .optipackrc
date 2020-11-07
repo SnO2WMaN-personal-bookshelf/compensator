@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "order": ["build", "start", "dev", "debug", "test", "clean", "lint", "fmt"]
+  }
+}
