@@ -62,6 +62,6 @@ server.get<{Querystring: {title: string}}>('/', async (request, reply) => {
   return imageBuffer;
 });
 
-server.listen(3000, (err) => {
+server.listen(3000, '0.0.0.0', (err) => {
   if (err) process.exit(1);
 });
