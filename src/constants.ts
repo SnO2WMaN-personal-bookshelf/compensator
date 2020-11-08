@@ -2,11 +2,13 @@
 import path from 'path';
 
 export default {
-  fontFamily: 'mplus-1p-regular',
-  fontPath: path.resolve(process.cwd(), 'fonts', 'mplus-1p-regular.ttf'),
-  width: 340,
-  height: 480,
-  fontSize: 24,
-  backgroundColor: '#FFF',
-  textColor: '#000',
+  fontFamily: 'mplus-1p',
+  fontPath: {
+    bold: path.resolve(process.cwd(), 'fonts', 'mplus-1p-bold.ttf'),
+  },
+  width: 565,
+  height: 885,
+  fontSize: 48,
+  backgroundColor: 'hsl(195, 15%, 92.5%)',
+  textColor: 'hsl(220, 10%, 7.5%)',
 };

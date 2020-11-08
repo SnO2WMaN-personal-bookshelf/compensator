@@ -8,7 +8,10 @@ export async function createImageBinary(title: string) {
   const canvas = createCanvas(constants.width, constants.height);
   const context = canvas.getContext('2d');
 
-  registerFont(constants.fontPath, {family: constants.fontFamily});
+  registerFont(constants.fontPath.bold, {
+    family: constants.fontFamily,
+    weight: 'bold',
+  });
 
   context.fillStyle = constants.backgroundColor;
   context.fillRect(0, 0, canvas.width, canvas.height);
